@@ -1,0 +1,18 @@
+1安装全局webpack
+cnpm i -g webpack
+2,配置package.json
+npm init
+3安装项目依赖
+cnpm i -D webpack
+cnpm i -D webpack-cli
+cnpm i -D webpack-dev-server
+4,创建HTML文件，写入这俩标签
+<body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+</body>
+5，npm run build
+6,安装项目依赖
+cnpm i -D webpack-dev-server
+7,修改 package.json,为“scripts”,添加一个键值对
+"server":"webpack-dev-server --open"
